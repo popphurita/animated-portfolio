@@ -1,0 +1,25 @@
+.invisible h1 {
+  display: none;
+}
+
+.red {
+  background-color: #FD3516;
+}
+
+.horizontal-container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.content-container {
+  padding: 5rem;
+  color: white;
+}
+
+.green {
+  background-color: #70AFA4;
+}
+
+.blue {
+  background-color: #026C90;
+}
