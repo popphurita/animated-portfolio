@@ -1,0 +1,63 @@
+.workdeck-container {
+  padding: 6rem 0;
+}
+
+.work-card {
+  border-radius: 2px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.work-card a {
+  color: white;
+}
+
+.card-body {
+  padding: 5rem;
+}
+
+.text-muted {
+  color: white !important;
+}
+
+.card-columns .card {
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 576px) {
+  .half-left {
+    margin: 2.4em 0 0 0;
+  }
+
+  .half-left {
+    margin: 2.4rem 0 0 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    column-gap: 2.25em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1199px) {
+  .content-container,
+  .card-body {
+    padding: 2em;
+  }
+
+  .half-left {
+    margin: 1em .5em 0 0;
+  }
+
+  .half-right {
+    margin: 1em 0 0 .5em;
+  }
+
+  .card-columns .card {
+    margin-bottom: 1rem;
+  }
+
+  .card-columns {
+    column-gap: 1em;
+  }
+}
