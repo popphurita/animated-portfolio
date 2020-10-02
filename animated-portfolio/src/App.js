@@ -1,15 +1,22 @@
 import React from 'react';
-import './App.css';
 import Hero from './Hero';
+import Bio from './Bio';
+import WorkDeck from './WorkDeck';
+
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <Container>
-      <Hero />
-    </Container>
+    <Row>
+      <Container>
+        <Hero />
+        <WorkDeck />
+        <Bio />
+      </Container>
+    </Row>
   );
 }
 
