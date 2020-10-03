@@ -44,6 +44,9 @@ function WorkDeck() {
             <a href="/">
               <Card.Body className={getRandomColorClassName()}>
                 <Card.Title><h3>Card title 1</h3></Card.Title>
+                <div className="unique-box">
+                  <img src="https://media.giphy.com/media/huhNjAPACjWJfHmUR4/giphy.gif" alt="something"></img>
+                </div>
                 <Card.Text>
                   This is a wider card with supporting text below as a natural lead-in to
                   additional content. This card has even longer content than the first to
@@ -59,6 +62,9 @@ function WorkDeck() {
             <a href="/">
               <Card.Body className={getRandomColorClassName()}>
                 <Card.Title><h3>Card title 2</h3></Card.Title>
+                <div className="unique-box">
+                  <img src="https://media.giphy.com/media/huhNjAPACjWJfHmUR4/giphy.gif" alt="something"></img>
+                </div>
                 <Card.Text>
                   This is a wider card with supporting text below as a natural lead-in to
                   additional content. This card has even longer content than the first to
@@ -76,6 +82,9 @@ function WorkDeck() {
             <a href="/">
               <Card.Body className={getRandomColorClassName()}>
                 <Card.Title><h3>Card title 3</h3></Card.Title>
+                <div className="unique-box">
+                  <img src="https://media.giphy.com/media/huhNjAPACjWJfHmUR4/giphy.gif" alt="something"></img>
+                </div>
                 <Card.Text>
                   This is a wider card with supporting text below as a natural lead-in to
                   additional content. This card has even longer content than the first to
@@ -93,6 +102,9 @@ function WorkDeck() {
             <a href="/">
               <Card.Body className={getRandomColorClassName()}>
                 <Card.Title><h3>Card title 4</h3></Card.Title>
+                <div className="unique-box">
+                  <img src="https://media.giphy.com/media/huhNjAPACjWJfHmUR4/giphy.gif" alt="something"></img>
+                </div>
                 <Card.Text>
                   This is a wider card with supporting text below as a natural lead-in to
                   additional content. This card has even longer content than the first to
@@ -108,6 +120,9 @@ function WorkDeck() {
             <a href="/">
               <Card.Body className={getRandomColorClassName()}>
                 <Card.Title><h3>Card title 5</h3></Card.Title>
+                <div className="unique-box">
+                  <img src="https://media.giphy.com/media/huhNjAPACjWJfHmUR4/giphy.gif" alt="something"></img>
+                </div>
                 <Card.Text>
                   This is a wider card with supporting text below as a natural lead-in to
                   additional content. This card has even longer content than the first to
@@ -125,6 +140,9 @@ function WorkDeck() {
             <a href="/">
               <Card.Body className={getRandomColorClassName()}>
                 <Card.Title><h3>Card title 6</h3></Card.Title>
+                <div className="unique-box">
+                  <img src="https://media.giphy.com/media/huhNjAPACjWJfHmUR4/giphy.gif" alt="something"></img>
+                </div>
                 <Card.Text>
                   This is a wider card with supporting text below as a natural lead-in to
                   additional content. This card has even longer content than the first to
@@ -140,6 +158,9 @@ function WorkDeck() {
             <a href="/">
               <Card.Body className={getRandomColorClassName()}>
                 <Card.Title><h3>Card title 7</h3></Card.Title>
+                <div className="unique-box">
+                  <img src="https://media.giphy.com/media/huhNjAPACjWJfHmUR4/giphy.gif" alt="something"></img>
+                </div>
                 <Card.Text>
                   This is a wider card with supporting text below as a natural lead-in to
                   additional content. This card has even longer content than the first to
@@ -155,6 +176,9 @@ function WorkDeck() {
             <a href="/">
               <Card.Body className={getRandomColorClassName()}>
                 <Card.Title><h3>Card title 8</h3></Card.Title>
+                <div className="unique-box">
+                  <img src="https://media.giphy.com/media/huhNjAPACjWJfHmUR4/giphy.gif" alt="something"></img>
+                </div>
                 <Card.Text>
                   This is a wider card with supporting text below as a natural lead-in to
                   additional content. This card has even longer content than the first to
