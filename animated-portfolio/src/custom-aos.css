@@ -1,0 +1,29 @@
+/*=============
+fade-up-highest
+=============*/
+
+[data-aos="fade-up-highest"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transform: translateY(35px);
+}
+
+[data-aos="fade-up-highest"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*=============
+fade-up-medium
+=============*/
+
+[data-aos="fade-up-medium"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transform: translateY(65px);
+}
+
+[data-aos="fade-up-medium"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Bio() {
   return (
     <Row className="Bio">
-      <Col className="horizontal-container">
+      <Col className="horizontal-container" data-aos='fade-up-highest'>
         <div className="cream">
           <a href="/">
             <div className="content-container">

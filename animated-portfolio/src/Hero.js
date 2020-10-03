@@ -4,13 +4,24 @@ import './structural-styles.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import './custom-aos.css';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Hero() {
+
+  React.useEffect(() => {
+    AOS.init({
+      duration : 2000
+    })
+  },[])
+
   return (
     <>
       <Row className="hero">
-        <Col className="horizontal-container">
+        <Col className="horizontal-container" data-aos='fade-up-highest'>
           <h1 className="invisible">Phurita Letheren's portfolio</h1>
           <div className="cream">
             <a href="/">
@@ -24,7 +35,7 @@ function Hero() {
         </Col>
       </Row>
       <Row>
-        <Col className="horizontal-container">
+        <Col className="horizontal-container" data-aos='fade-up-medium'>
           <a href="/">
             <div className="half-left green">
               <div className="content-container">
@@ -34,7 +45,7 @@ function Hero() {
             </div>
           </a>
         </Col>
-        <Col className="horizontal-container">
+        <Col className="horizontal-container" data-aos='fade-up'>
           <a href="/">
             <div className="half-right blue">
               <div className="content-container">
