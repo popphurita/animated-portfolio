@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from './Hero';
 import Bio from './Bio';
-import WorkDeck from './WorkDeck';
+// import WorkDeck from './WorkDeck';
 import PortNavigation from './PortNavigation';
 
 import Container from 'react-bootstrap/Container';
@@ -19,10 +19,9 @@ function App() {
         </Col>
       </Row>
       <Row>
-        
         <Container>
           <Hero />
-          <WorkDeck />
+          {/* <WorkDeck /> */}
           <Bio />
         </Container>
     </Row>
