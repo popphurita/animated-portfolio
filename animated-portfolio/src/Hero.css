@@ -10,12 +10,16 @@
 .content-container {
   padding: 3.5em;
   color: white;
-  height: 40vh;
+  height: 50vh;
 }
 
 .icon {
   font-size: 30px;
   margin-top: 1em;
+}
+
+.content-container.hero {
+  height: 70vh;
 }
 
 .icon svg {

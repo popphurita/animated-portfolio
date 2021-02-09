@@ -5,7 +5,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import { Icon } from '@iconify/react';
+import laptopCode from '@iconify/icons-la/laptop-code';
 import paintBrush from '@iconify/icons-la/paint-brush';
+import usersIcon from '@iconify/icons-la/users';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -27,7 +29,7 @@ function Hero() {
         <Col className="horizontal-container" data-aos='fade-up-highest'>
           <h1 className="invisible">Phurita Letheren's portfolio</h1>
           <div>
-            <div className="content-container">
+            <div className="content-container hero">
               <h2>Phurita (Pop)</h2>
               <h2>Letheren</h2>
               <p>UX/UI Designer & a bit of front-end dev <span role="img" aria-label="image" alt="winking emoji">😉</span></p>
@@ -46,7 +48,7 @@ function Hero() {
               <div className="content-container">
                 <h2>Web & App design</h2>
                 <div className="icon">
-                  <Icon icon={paintBrush} style={{color: '#fff'}} />
+                  <Icon icon={laptopCode} />
                 </div>
               </div>
             </div>
@@ -57,6 +59,9 @@ function Hero() {
             <div>
               <div className="content-container">
                 <h2>Illustrations</h2>
+                <div className="icon">
+                  <Icon icon={paintBrush} />
+                </div>
               </div>
             </div>
           </a>
@@ -68,6 +73,9 @@ function Hero() {
             <div>
               <div className="content-container">
                 <h2>Research</h2>
+                <div className="icon">
+                  <Icon icon={usersIcon} />
+                </div>
               </div>
             </div>
           </a>
