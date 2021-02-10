@@ -1,41 +1,48 @@
 {
-  "name": "animated-portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "aos": "^2.3.4",
-    "bootstrap": "^4.6.0",
-    "react": "^16.13.1",
-    "react-bootstrap": "^1.4.3",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
-  },
+  "name": "pop-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "rm -rf .cache public",
+    "clean-full": "rm -rf .cache public node_modules",
+    "deploy": "netlify deploy --dir public --prod"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rocketmakers/armstrong": "0.0.1-alpha.63",
+    "gatsby": "2.24.65",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-helmet": "6.1.0",
+    "underscore": "1.11.0",
+    "aos": "^2.3.4",
+    "react-bootstrap": "^1.4.3",
+    "bootstrap": "^4.6.0",
     "@iconify/icons-la": "^1.1.0",
     "@iconify/react": "^1.1.3"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.3",
+    "@types/react": "16.9.49",
+    "@types/react-dom": "16.9.8",
+    "@types/react-helmet": "6.1.0",
+    "@types/underscore": "^1.10.23",
+    "gatsby-plugin-robots-txt": "1.5.3",
+    "gatsby-plugin-sass": "2.3.13",
+    "gatsby-plugin-sitemap": "2.4.13",
+    "gatsby-plugin-ts": "2.7.1",
+    "gatsby-plugin-ts-config": "^1.0.0",
+    "netlify": "^4.9.0",
+    "netlify-cli": "^2.68.7",
+    "node-sass": "4.14.1",
+    "source-map-support": "0.5.19",
+    "ts-node": "^9.0.0",
+    "typescript": "4.0.3"
   }
 }
