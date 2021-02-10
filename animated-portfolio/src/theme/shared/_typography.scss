@@ -9,7 +9,7 @@ h2,
 h3 {
   font-family: 'Catamaran', sans-serif !important;
   font-weight: 800 !important;
-  letter-spacing: .015em;
+  letter-spacing: 0.015em;
 }
 
 h2 {
@@ -23,17 +23,16 @@ h3 {
 p {
   font-size: 1em !important;
   line-height: 1.5em !important;
-  letter-spacing: .02em !important;
+  letter-spacing: 0.02em !important;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   margin-top: 1em;
 }
-
 :root {
-  --port-cream: #F0E5D5;
-  --port-green: #028A98;
-  --port-blue: #026C90;
-  --port-orange: #FE6D2E;
+  --port-cream: #f0e5d5;
+  --port-green: #028a98;
+  --port-blue: #026c90;
+  --port-orange: #fe6d2e;
   --port-background: #181818;
   --port-brown: #757171;
 }

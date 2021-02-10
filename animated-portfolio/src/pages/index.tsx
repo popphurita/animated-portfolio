@@ -1,16 +1,15 @@
-import React from 'react';
-import Hero from './Hero';
-import Bio from './Bio';
+import * as React from 'react';
+import { Hero } from '../layout/Hero';
+import { Bio } from '../layout/Bio';
 // import WorkDeck from './WorkDeck';
-import PortNavigation from './PortNavigation';
-
+import PortNavigation from '../layout/PortNavigation';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.scss';
 
-function App() {
+const Index: React.FunctionComponent<{}> = () => {
   return (
     <>
       <Row>
@@ -24,9 +23,9 @@ function App() {
           {/* <WorkDeck /> */}
           <Bio />
         </Container>
-    </Row>
+      </Row>
     </>
   );
-}
+};
 
-export default App;
+export default Index;
