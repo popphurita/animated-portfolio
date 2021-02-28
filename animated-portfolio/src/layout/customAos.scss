@@ -5,7 +5,7 @@ fade-up-highest
 [data-aos="fade-up-highest"] {
   opacity: 0;
   transition-property: transform, opacity;
-  transform: translateY(35px);
+  transform: translateY(25px);
 }
 
 [data-aos="fade-up-highest"].aos-animate {
@@ -20,10 +20,25 @@ fade-up-medium
 [data-aos="fade-up-medium"] {
   opacity: 0;
   transition-property: transform, opacity;
-  transform: translateY(65px);
+  transform: translateY(55px);
 }
 
 [data-aos="fade-up-medium"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*=============
+fade-up-small
+=============*/
+
+[data-aos="fade-up-small"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transform: translateY(75px);
+}
+
+[data-aos="fade-up-small"].aos-animate {
   opacity: 1;
   transform: translateY(0);
 }

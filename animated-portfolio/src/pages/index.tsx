@@ -1,13 +1,13 @@
 import * as React from 'react';
-import { Hero } from '../layout/Hero';
-import { Bio } from '../layout/Bio';
-// import WorkDeck from './WorkDeck';
-import PortNavigation from '../layout/PortNavigation';
+import { Hero } from '../layout/hero/Hero';
+import { Bio } from '../layout/bio/Bio';
+import { Content } from '../layout/content/Content';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import './index.scss';
+import PortNavigation from '../layout/portNavigation/PortNavigation';
 
 const Index: React.FunctionComponent<{}> = () => {
   return (
@@ -20,7 +20,7 @@ const Index: React.FunctionComponent<{}> = () => {
       <Row>
         <Container>
           <Hero />
-          {/* <WorkDeck /> */}
+          <Content />
           <Bio />
         </Container>
       </Row>
