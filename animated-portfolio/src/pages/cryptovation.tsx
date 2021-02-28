@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import PortNavigation from '../layout/portNavigation/PortNavigation'
+import { CryptovationContent } from '../layout/cryptovation/CryptovationContent'
+import { Hero } from '../layout/cryptovation/Hero'
 
   const Cryptovation: React.FC = () => {
     return (
@@ -12,7 +14,8 @@ import PortNavigation from '../layout/portNavigation/PortNavigation'
       </Row>
       <Row>
         <Container>
-          <h1>hi</h1>
+          <Hero />
+          <CryptovationContent />
         </Container>
       </Row>
     </>

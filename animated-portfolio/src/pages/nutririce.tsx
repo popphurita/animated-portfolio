@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { Hero } from '../layout/nutririce/Hero'
 import PortNavigation from '../layout/portNavigation/PortNavigation'
-import { WebAppDesignBodyContent } from '../layout/WebAppDesignBodyContent'
+import { Hero } from '../layout/nutririce/Hero'
+import { NutriRiceContent } from '../layout/nutririce/NutriRiceContent'
 
   const NutriRice: React.FC = () => {
     return (
@@ -15,7 +15,7 @@ import { WebAppDesignBodyContent } from '../layout/WebAppDesignBodyContent'
       <Row>
         <Container>
           <Hero />
-          <WebAppDesignBodyContent />
+          <NutriRiceContent />
         </Container>
       </Row>
     </>

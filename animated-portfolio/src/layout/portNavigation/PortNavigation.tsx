@@ -7,17 +7,16 @@ import './portNavigation.scss';
 
 export const PortNavigation: React.FC = () => {
   return (
-    <Navbar collapseOnSelect expand="sm">
+    <Navbar collapseOnSelect expand="sm" className="navbar-dark">
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/">Back to projects</Nav.Link>
+          <Nav.Link href="/">Pop Phurita</Nav.Link>
         </Nav>
         <Nav>
-          {/* <Nav.Link href="/webAndAppDesign">Web & App Design</Nav.Link>
-          <Nav.Link href="/illustration">Illustrations</Nav.Link>
-          <Nav.Link href="/research">Research</Nav.Link> */}
-          <Nav.Link href="/contact">Contact</Nav.Link>
+          <Nav.Link href="/curriculumvitae">CV</Nav.Link>
+          <Nav.Link href="https://www.linkedin.com/in/pop-phurita/">LinkedIn</Nav.Link>
+          <Nav.Link href="mailto:phurita.sainonsee@gmail.com">Email</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
