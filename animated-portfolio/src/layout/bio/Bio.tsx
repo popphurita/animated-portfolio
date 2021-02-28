@@ -19,7 +19,7 @@ export const Bio: React.FC = () => {
           </div>
         </Col>
       </Row>
-      <Row className="Bio">
+      <Row className="Bio" xs={1} md={2}>
         <Col className="horizontal-container" data-aos="fade-up-highest">
           <div>
             <a href="/">
@@ -47,7 +47,7 @@ export const Bio: React.FC = () => {
           </div>
         </Col>
       </Row>
-      <Row className="Bio">
+      <Row className="Bio" xs={1} md={2}>
         <Col className="horizontal-container" data-aos="fade-up-highest">
           <div>
             <a href="/">

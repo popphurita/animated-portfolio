@@ -8,52 +8,52 @@ import usersIcon from '@iconify/icons-la/users';
 import AOS from 'aos';
 
 import 'aos/dist/aos.css';
-import './customAos.scss';
-import './Hero.scss';
+import '../customAos.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export const Hero: React.FC = () => {
+export const Content: React.FC = () => {
   React.useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1500,
     });
   }, []);
 
   return (
     <>
-      <Row className="hero">
-        <Col className="horizontal-container" data-aos="fade-up-highest">
-          <h1 className="invisible">Phurita Letheren's portfolio</h1>
-          <div>
-            <div className="content-container hero">
-              <h2>Phurita (Pop)</h2>
-              <h2>Letheren</h2>
-              <p>
-                UX/UI Designer & a bit of front-end dev{' '}
-                <span role="img" aria-label="image">
-                  😉
-                </span>
-              </p>
-              <ul>
-                <li>
-                  <a href="https://www.linkedin.com/in/pop-phurita/">Connect with me in LinkedIn</a>
-                </li>
-                <li>
-                  <a href="mailto:phurita.sainonsee@gmail.com">Email me</a>
-                </li>
-              </ul>
+      <Row xs={1} md={2}>
+        <Col className="horizontal-container" data-aos="fade-up-medium">
+          <a href="/webAndAppDesign">
+            <div>
+              <div className="content-container">
+                <h2>Nutri Rice</h2>
+                <div className="icon">
+                  <Icon icon={laptopCode} />
+                </div>
+              </div>
             </div>
-          </div>
+          </a>
+        </Col>
+        <Col className="horizontal-container" data-aos="fade-up">
+          <a href="/illustration">
+            <div>
+              <div className="content-container">
+                <h2>Cryptovation</h2>
+                <div className="icon">
+                  <Icon icon={paintBrush} />
+                </div>
+              </div>
+            </div>
+          </a>
         </Col>
       </Row>
-      <Row>
+      <Row xs={1} md={2}>
         <Col className="horizontal-container" data-aos="fade-up-medium">
           <a href="/">
             <div>
               <div className="content-container">
-                <h2>Web & App design</h2>
+                <h2>Typecase CMS</h2>
                 <div className="icon">
-                  <Icon icon={laptopCode} />
+                  <Icon icon={usersIcon} />
                 </div>
               </div>
             </div>
@@ -63,21 +63,33 @@ export const Hero: React.FC = () => {
           <a href="/">
             <div>
               <div className="content-container">
-                <h2>Illustrations</h2>
+                <h2>Figma + Principle interaction design</h2>
                 <div className="icon">
-                  <Icon icon={paintBrush} />
+                  <Icon icon={usersIcon} />
                 </div>
               </div>
             </div>
           </a>
         </Col>
       </Row>
-      <Row>
+      <Row xs={1} md={2}>
         <Col className="horizontal-container" data-aos="fade-up-medium">
           <a href="/">
             <div>
               <div className="content-container">
-                <h2>Research</h2>
+                <h2>Dev</h2>
+                <div className="icon">
+                  <Icon icon={usersIcon} />
+                </div>
+              </div>
+            </div>
+          </a>
+        </Col>
+        <Col className="horizontal-container" data-aos="fade-up">
+          <a href="/">
+            <div>
+              <div className="content-container">
+                <h2>Design System</h2>
                 <div className="icon">
                   <Icon icon={usersIcon} />
                 </div>
