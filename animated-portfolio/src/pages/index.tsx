@@ -2,7 +2,10 @@ import * as React from 'react';
 import { Hero } from '../layout/hero/Hero';
 import { Bio } from '../layout/bio/Bio';
 import { Content } from '../layout/content/Content';
-import Container from 'react-bootstrap/Container';
+import { Skills } from '../layout/skills/Skills';
+import { Tools } from '../layout/tools/Tools';
+import { Cta } from '../layout/cta/Cta';
+
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Helmet } from 'react-helmet';
@@ -21,12 +24,15 @@ const Index: React.FunctionComponent<{}> = () => {
           <PortNavigation />
         </Col>
       </Row>
-      <Row>
-        <Container>
+      <Row className="main-content">
+        <Col className="main-content">
           <Hero />
           <Content />
           <Bio />
-        </Container>
+          <Tools />
+          <Skills />
+          <Cta />
+        </Col>
       </Row>
     </>
   );

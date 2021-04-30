@@ -7,7 +7,7 @@ import wireframe from './wireframe.png'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export const Content: React.FC = () => {
+export const DesignsystemContent: React.FC = () => {
   return (
     <>
       <Row>

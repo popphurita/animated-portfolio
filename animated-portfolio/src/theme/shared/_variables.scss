@@ -3,9 +3,84 @@ $fixed-screen-size: 1280px;
 $screen-size-phone: 738px;
 $screen-size-tablet: 1000px;
 
-// //// FONT SIZES
-// $font-size-root: 16px;
+// Breakpoints
+// Small smartphones (portrait view)
+$screen-xsmall-min: 320px;
 
+// Small tablets and large smartphones (landscape view)
+$screen-small-min: 540px;
+
+// Small tablets (portrait view)
+$screen-medium-min: 768px;
+
+// Tablets and small desktops
+$screen-large-min: 992px;
+
+// Large tablets and desktops
+$screen-xlarge-min: 1400px;
+
+// Extra small devices
+@mixin xsmall-breakpoint {
+  @media (min-width: #{$screen-xsmall-min}) {
+      @content;
+  }
+}
+
+
+// Small devices
+@mixin small-breakpoint {
+  @media (min-width: #{$screen-small-min}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin medium-breakpoint {
+  @media (min-width: #{$screen-medium-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin large-breakpoint {
+  @media (min-width: #{$screen-large-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xlarge-breakpoint {
+  @media (min-width: #{$screen-xlarge-min}) {
+      @content;
+  }
+}
+
+
+// FONT SIZES
+
+// Pop's
+$l-font-size-page-header: 52px;
+$l-line-height-page-header: 78px;
+$s-font-size-page-header: 35px;
+$s-line-height-page-header: 52px;
+
+$l-font-size-section-header: 34px;
+$l-line-height-section-header: 51px;
+$s-font-size-section-header: 22px;
+$s-line-height-section-header: 33px;
+
+$l-font-size-card-header: 27px;
+$l-line-height-card-header: 45px;
+$s-font-size-card-header: 19px;
+$s-line-height-card-header: 28px;
+
+$ls-font-size-sub-header: 18px;
+$ls-line-height-sub-header: 27px;
+
+$ls-font-size-paragraph: 16px;
+$ls-line-height-paragraph: 27px;
+
+// Old
 $font-size-xxsmall: 14px;
 $font-size-xsmall: 16px; //spec
 $font-size-small: 20px; //spec
@@ -52,7 +127,37 @@ $spacing-sizes: (
   none 0
 );
 
+// RADIUS
+$border-radius-small: 14px;
+$border-radius-large: 20px;
+
 //// COLORS
+$blue1: #3740EA;
+// main nav cta
+$blue2: #0814E4;
+// card icon
+$blue3: #5F66ED;
+// contact section
+$blue4: #4C53D6;
+// a bit about me icons
+$blue5: #252885;
+//input title
+$blue6: #151849;
+// second nav cta
+$grey1: #F5F5F5;
+// second section cta
+$grey2: #F9FAFC;
+// tools icon
+$grey3: #4E4F56;
+// heading
+$grey4: #10123E;
+// text
+$grey5: #8E8F9F;
+// sub-header
+$grey6: #434564;
+
+
+
 $white: #ffffff;
 
 $brand-primary: #75a9bf;

@@ -19,7 +19,7 @@ export const Hero: React.FC = () => {
     <Row>
       <Col className="horizontal-container">
         <div className="content-container-hero">
-          <h2>Other fun things I do!</h2>
+          <h1>Other fun things I do!</h1>
         </div>
       </Col>
     </Row>

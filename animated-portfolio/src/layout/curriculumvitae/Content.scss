@@ -1,0 +1,136 @@
+// RADIUS
+$border-radius-small: 14px;
+$border-radius-large: 20px;
+
+//// COLORS
+// main cta
+$blue1: #3740EA;
+// main nav cta
+$blue2: #0814E4;
+// card icon
+$blue3: #5F66ED;
+// contact section
+$blue4: #4C53D6;
+// a bit about me icons
+$blue5: #252885;
+//input title
+$blue6: #151849;
+// second nav cta
+$grey1: #F5F5F5;
+// second section cta
+$grey2: #F9FAFC;
+// tools icon
+$grey3: #4E4F56;
+// text
+$grey4: #8E8F9F;
+// heading
+$grey5: #10123E;
+// sub-header
+$grey6: #434564;
+
+// Breakpoints
+// Small smartphones (portrait view)
+$screen-xsmall-min: 320px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-small-min: 540px;
+
+// Small tablets (portrait view)
+$screen-medium-min: 768px;
+
+// Tablets and small desktops
+$screen-large-min: 992px;
+
+// Large tablets and desktops
+$screen-xlarge-min: 1400px;
+
+// Extra extra small devices
+@mixin xsmall-breakpoint {
+  @media (min-width: #{$screen-xsmall-min}) {
+      @content;
+  }
+}
+
+// Small devices
+@mixin small-breakpoint {
+  @media (min-width: #{$screen-small-min}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin medium-breakpoint {
+  @media (min-width: #{$screen-medium-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin large-breakpoint {
+  @media (min-width: #{$screen-large-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xlarge-breakpoint {
+  @media (min-width: #{$screen-xlarge-min}) {
+      @content;
+  }
+}
+
+
+ul,
+li {
+  color: $grey4;
+  margin-left: 10px;
+
+  ::marker {
+    color: #d4d6ff;
+  }
+}
+
+.work-content-container {
+  display: flex;
+  margin-bottom: 40px;
+
+  img {
+    height: 100%;
+
+    @include xsmall-breakpoint {
+      display: none;
+    }
+
+    @include medium-breakpoint {
+      visibility: visible;
+      padding-right: 40px;
+      display: block;
+    }
+  }
+
+  &.other {
+    img {
+      padding-left: 12px;
+      height: 100%;
+
+      @include medium-breakpoint {
+        padding-right: 40px;
+      }
+    }
+  }
+}
+
+.work-content,
+.last-work-content {
+
+  @include medium-breakpoint {
+    margin-left: 15px;
+  }
+}
+
+.education-content-container {
+    margin-top: 30px;
+    height: 10vh;
+    text-align: center;
+
+}

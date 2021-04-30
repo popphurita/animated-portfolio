@@ -2,7 +2,9 @@ import * as React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import PortNavigation from '../layout/portNavigation/PortNavigation'
 import { Hero } from '../layout/designsystem/Hero'
-import { Content } from '../layout/designsystem/Content'
+import { DesignsystemContent } from '../layout/designsystem/DesignsystemContent'
+import { Content } from '../layout/content/Content';
+import { Cta } from '../layout/cta/Cta';
 
 
   const DesignSystem: React.FC = () => {
@@ -16,8 +18,14 @@ import { Content } from '../layout/designsystem/Content'
       <Row>
         <Container>
           <Hero />
-          <Content />
+          <DesignsystemContent />
         </Container>
+      </Row>
+      <Row className="main-content">
+        <Col className="main-content">
+          <Content />
+          <Cta />
+        </Col>
       </Row>
     </>
     )

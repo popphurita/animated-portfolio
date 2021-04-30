@@ -1,15 +1,183 @@
-.Bio {
-  padding-bottom: 1em;
+//// COLORS
+// main cta
+$blue1: #3740EA;
+// main nav cta
+$blue2: #0814E4;
+// card icon
+$blue3: #5F66ED;
+// contact section
+$blue4: #4C53D6;
+// a bit about me icons
+$blue5: #252885;
+//input title
+$blue6: #151849;
+// second nav cta
+$grey1: #F5F5F5;
+// second section cta
+$grey2: #F9FAFC;
+// tools icon
+$grey3: #4E4F56;
+// text
+$grey4: #8E8F9F;
+// heading
+$grey5: #10123E;
+// sub-header
+$grey6: #434564;
+
+
+
+
+// Breakpoints
+// Small smartphones (portrait view)
+$screen-xsmall-min: 320px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-small-min: 540px;
+
+// Small tablets (portrait view)
+$screen-medium-min: 768px;
+
+// Tablets and small desktops
+$screen-large-min: 992px;
+
+// Large tablets and desktops
+$screen-xlarge-min: 1400px;
+
+// Extra small devices
+@mixin xsmall-breakpoint {
+  @media (min-width: #{$screen-xsmall-min}) {
+      @content;
+  }
 }
 
-.content-container.bio {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  height: fit-content;
-  color: #b1b1b1;
+
+// Small devices
+@mixin small-breakpoint {
+  @media (min-width: #{$screen-small-min}) {
+      @content;
+  }
 }
 
+// Medium devices
+@mixin medium-breakpoint {
+  @media (min-width: #{$screen-medium-min}) {
+      @content;
+  }
+}
 
-.Bio:last-child {
-  padding-bottom: 9em;
+// Large devices
+@mixin large-breakpoint {
+  @media (min-width: #{$screen-large-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xlarge-breakpoint {
+  @media (min-width: #{$screen-xlarge-min}) {
+      @content;
+  }
+}
+
+// =====================================================
+
+
+.bio-header-section {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.bio-header-container {
+  padding-bottom: 40px;
+}
+
+.bio-section {
+  padding: 20px 5vw;
+
+  .col {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  @include medium-breakpoint {
+    padding: 15px 10vw;
+  }
+
+  @include xlarge-breakpoint {
+    padding: 15px 20vw;
+  }
+}
+.bio-section {
+  .nav-pills .nav-link.active {
+    background: white;
+    color: $blue6;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+
+    @include large-breakpoint {
+      text-align: left;
+      padding: 30px;
+      margin: 40px 0;
+    }
+  }
+
+  .nav-item {
+    #first {
+      margin-top: 0;
+    }
+
+    a {
+      text-align: center;
+
+      @include large-breakpoint {
+        text-align: left;
+      }
+    }
+  }
+
+  .nav-pills {
+    font-size: 18px;
+
+    @include large-breakpoint {
+      font-size: 25px;
+    }
+
+    .nav-link {
+      margin: 15px 0;
+      color: $blue6;
+
+      svg {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .fade.tab-pane.active.show {
+    p {
+      text-align: center;
+      padding-top: 15px;
+
+      @include large-breakpoint {
+        text-align: left;
+        padding-top: none;
+      }
+    }
+  }
+
+}
+.bio-section .col {
+  background-color: $grey2;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.bio-content {
+  align-self: center;
 }
