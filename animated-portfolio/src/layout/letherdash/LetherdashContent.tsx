@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export const Content: React.FC = () => {
+export const LetherdashContent: React.FC = () => {
   return (
     <>
       <Row>

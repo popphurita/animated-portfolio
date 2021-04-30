@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './portNavigation.scss';
 
 import { Icon, InlineIcon } from '@iconify/react';
-import bxMenuAltLeft from '@iconify/icons-bx/bx-menu-alt-left';
 import bxHomeAlt from '@iconify/icons-bx/bx-home-alt';
 
 export const PortNavigation: React.FC = () => {
@@ -20,7 +19,7 @@ export const PortNavigation: React.FC = () => {
         </Nav>
         <Nav>
           <Nav.Link href="/curriculumvitae">Curriculum Vitae</Nav.Link>
-          <Nav.Link href="https://www.linkedin.com/in/pop-phurita/">
+          <Nav.Link href="/allprojects">
             <div className="btn">
               <Button className="btn-secondary">
                 See portfolio

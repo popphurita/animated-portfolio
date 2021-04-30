@@ -19,15 +19,14 @@ export const Hero: React.FC = () => {
   }, []);
 
   return (
-    <Container>
-      <Row xs={1} md={2}>
+    // <Container>
+      <Row className="work-header-section">
         <Col>
           <div>
             <h1>Work experience</h1>
-            {/* <p>Scroll down to see some of the coolest things I have done before :) </p> */}
           </div>
         </Col>
       </Row>
-    </Container>
+    // </Container>
   );
 };

@@ -110,11 +110,11 @@ $screen-xlarge-min: 1400px;
   }
 
   @include medium-breakpoint {
-    padding: 15px 10vw 50px;
+    padding: 15px 10vw 75px;
   }
 
   @include xlarge-breakpoint {
-    padding: 15px 20vw 75px;
+    padding: 15px 20vw 90px;
   }
 }
 

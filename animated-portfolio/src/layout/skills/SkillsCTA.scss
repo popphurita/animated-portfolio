@@ -82,22 +82,23 @@ $screen-xlarge-min: 1400px;
 // =====================================================
 
 
-.cta-header-container {
-  margin: 90px 0 40px;
+// .skills-header-section {
+//   text-align: center;
+//   margin-top: 30px;
+// }
 
-  h2 {
-    color: white !important;
-  }
+.skills-cta-header-container {
+  margin: 90px 0 40px;
+  text-align: center;
 
   p {
-    color: white;
+    color: $grey4;
   }
 }
 
-.cta-header-section {
-  background-color:  $blue4;
+.skills-cta-section {
+  background-color: $grey2;
   padding: 0 5vw 100px;
-  text-align: center;
 
   .col {
     padding-right: 15px !important;
@@ -109,14 +110,12 @@ $screen-xlarge-min: 1400px;
   }
 
   @include medium-breakpoint {
-    padding: 0 20vw 100px;
-    text-align: left;
+    padding: 15px 10vw 50px;
   }
 
   @include xlarge-breakpoint {
-    padding: 40px 30vw 100px;
+    padding: 15px 20vw 75px;
   }
-
 
   .btn {
     border-radius: 20px;
@@ -149,5 +148,29 @@ $screen-xlarge-min: 1400px;
       }
     }
   }
+}
 
+
+.skills-cta-header-section {
+  background-color: $grey2;
+  text-align: center;
+  margin-top: 30px;
+
+  @include medium-breakpoint {
+    text-align: left;
+  }
+}
+
+
+.skills-cta-icons {
+  background-color:white;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  font-size: 25px;
+  color: $grey5;
+  border-radius: 100%;
+  margin: 15px auto;
+  align-items: center;
+  justify-content: center;
 }

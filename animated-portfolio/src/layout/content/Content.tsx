@@ -69,10 +69,10 @@ export const Content: React.FC = () => {
       </Row>
       <Row className="project-section" xs={1} md={3}>
         <Col>
-          <a href="/typeset">
+          <a href="/letherdash">
             <div className="project-card">
               <div className="card-content">
-                <h3>Rota management</h3>
+                <h3>House jobs management</h3>
                 <Icon icon={calendar4Range} />
               </div>
             </div>

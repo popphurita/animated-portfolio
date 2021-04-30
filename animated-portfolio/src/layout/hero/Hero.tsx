@@ -30,15 +30,14 @@ export const Hero: React.FC = () => {
             </div>
             <div className="hero-cta-container">
               <div className="btn">
-                <Button className="btn-primary">
+                <Button href="mailto:phurita.sainonsee@gmail.com" className="btn-primary">
                   Get in touch
-              </Button>
-                <Button className="btn-secondary">
+                </Button>
+                <Button href="/allprojects" className="btn-secondary">
                   See portfolio
               </Button>
               </div>
             </div>
-
           </Col>
           <Col>
             <Image src={HeroImage} alt="A female character riding a unicorn" fluid />

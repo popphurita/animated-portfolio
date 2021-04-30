@@ -1,8 +1,10 @@
 import * as React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import PortNavigation from '../layout/portNavigation/PortNavigation'
-import { Content } from '../layout/typecase/Content'
+import { TypecaseContent } from '../layout/typecase/TypecaseContent'
 import { Hero } from '../layout/typecase/Hero'
+import { Content } from '../layout/content/Content';
+import { Cta } from '../layout/cta/Cta';
 
   const Typecase: React.FC = () => {
     return (
@@ -15,8 +17,14 @@ import { Hero } from '../layout/typecase/Hero'
       <Row>
         <Container>
           <Hero />
-          <Content />
+          <TypecaseContent />
         </Container>
+      </Row>
+      <Row className="main-content">
+        <Col className="main-content">
+          <Content />
+          <Cta />
+        </Col>
       </Row>
     </>
     )

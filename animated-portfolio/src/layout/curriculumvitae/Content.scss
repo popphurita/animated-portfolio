@@ -1,3 +1,7 @@
+// RADIUS
+$border-radius-small: 14px;
+$border-radius-large: 20px;
+
 //// COLORS
 // main cta
 $blue1: #3740EA;
@@ -24,9 +28,6 @@ $grey5: #10123E;
 // sub-header
 $grey6: #434564;
 
-
-
-
 // Breakpoints
 // Small smartphones (portrait view)
 $screen-xsmall-min: 320px;
@@ -43,13 +44,12 @@ $screen-large-min: 992px;
 // Large tablets and desktops
 $screen-xlarge-min: 1400px;
 
-// Extra small devices
+// Extra extra small devices
 @mixin xsmall-breakpoint {
   @media (min-width: #{$screen-xsmall-min}) {
       @content;
   }
 }
-
 
 // Small devices
 @mixin small-breakpoint {
@@ -79,75 +79,58 @@ $screen-xlarge-min: 1400px;
   }
 }
 
-// =====================================================
 
+ul,
+li {
+  color: $grey4;
+  margin-left: 10px;
 
-.cta-header-container {
-  margin: 90px 0 40px;
-
-  h2 {
-    color: white !important;
-  }
-
-  p {
-    color: white;
+  ::marker {
+    color: #d4d6ff;
   }
 }
 
-.cta-header-section {
-  background-color:  $blue4;
-  padding: 0 5vw 100px;
-  text-align: center;
+.work-content-container {
+  display: flex;
+  margin-bottom: 40px;
 
-  .col {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
-  }
+  img {
+    height: 100%;
 
-  a:hover {
-    text-decoration: none;
-  }
-
-  @include medium-breakpoint {
-    padding: 0 20vw 100px;
-    text-align: left;
-  }
-
-  @include xlarge-breakpoint {
-    padding: 40px 30vw 100px;
-  }
-
-
-  .btn {
-    border-radius: 20px;
-    padding: 0;
-    font-weight: bold;
-    letter-spacing: 0.01em;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    justify-content: center;
+    @include xsmall-breakpoint {
+      display: none;
+    }
 
     @include medium-breakpoint {
-      justify-content: space-between;
+      visibility: visible;
+      padding-right: 40px;
+      display: block;
     }
+  }
 
-    &:before {
-      content: none;
-    }
+  &.other {
+    img {
+      padding-left: 12px;
+      height: 100%;
 
-    .btn-secondary {
-      background-color: white;
-      color: $blue1;
-      border: 1px $blue1 solid;
-      border-radius: 20px;
-      padding: 15px 45px;
-
-      &:hover {
-        background-color: black;
-        color: white;
+      @include medium-breakpoint {
+        padding-right: 40px;
       }
     }
   }
+}
+
+.work-content,
+.last-work-content {
+
+  @include medium-breakpoint {
+    margin-left: 15px;
+  }
+}
+
+.education-content-container {
+    margin-top: 30px;
+    height: 10vh;
+    text-align: center;
 
 }

@@ -111,66 +111,67 @@ $screen-xlarge-min: 1400px;
     padding: 15px 20vw;
   }
 }
-
-.nav-pills .nav-link.active {
-  background: white;
-  color: $blue6;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  padding: 15px;
-  margin: 0;
-  text-align: center;
-
-  @include large-breakpoint {
-    text-align: left;
-    padding: 30px;
-    margin: 40px 0;
-  }
-}
-
-.nav-item {
-  #first {
-    margin-top: 0;
-  }
-
-  a {
-    text-align: center;
-
-    @include large-breakpoint {
-      text-align: left;
-    }
-  }
-}
-
-.nav-pills {
-  font-size: 18px;
-
-  @include large-breakpoint {
-    font-size: 25px;
-  }
-
-  .nav-link {
-    margin: 15px 0;
+.bio-section {
+  .nav-pills .nav-link.active {
+    background: white;
     color: $blue6;
-
-    svg {
-      margin-right: 15px;
-    }
-  }
-}
-
-.fade.tab-pane.active.show {
-  p {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 0;
     text-align: center;
-    padding-top: 15px;
 
     @include large-breakpoint {
       text-align: left;
-      padding-top: none;
+      padding: 30px;
+      margin: 40px 0;
     }
   }
-}
 
+  .nav-item {
+    #first {
+      margin-top: 0;
+    }
+
+    a {
+      text-align: center;
+
+      @include large-breakpoint {
+        text-align: left;
+      }
+    }
+  }
+
+  .nav-pills {
+    font-size: 18px;
+
+    @include large-breakpoint {
+      font-size: 25px;
+    }
+
+    .nav-link {
+      margin: 15px 0;
+      color: $blue6;
+
+      svg {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .fade.tab-pane.active.show {
+    p {
+      text-align: center;
+      padding-top: 15px;
+
+      @include large-breakpoint {
+        text-align: left;
+        padding-top: none;
+      }
+    }
+  }
+
+}
 .bio-section .col {
   background-color: $grey2;
   padding: 25px;

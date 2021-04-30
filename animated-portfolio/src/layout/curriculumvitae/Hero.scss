@@ -79,61 +79,24 @@ $screen-xlarge-min: 1400px;
   }
 }
 
-.bio-header-section {
-  margin-top: 30px;
+.work-header-section {
+  margin-top: 60px;
+  margin-bottom: 0;
   height: 10vh;
-
-
-  p {
-    color: $grey4;
-  }
-}
-
-// .bio-header-container {
-//   text-align: center;
-
-//   @include medium-breakpoint {
-//     text-align: left;
-//   }
-// }
-
-.bio-cta-container {
-  height: 150px;
-  width: 80%;
-  margin: 0 auto;
+  text-align: center;
 
   @include medium-breakpoint {
-    margion-top: 100px;
-    margin-left: 0;
+    margin-bottom: 70px;
   }
 }
 
-.content-container-body {
-  padding-left: 3.5em;
-  padding-right: 3.5em;
-  padding-bottom: 3.5em;
-  padding-top: 1em;
-  height: 65vh;
-
-  &:first-child {
-    height: fit-content;
-  }
-}
-
-
-.content-container-bio {
+.content-container-work {
   padding: 3.5em;
   padding-bottom: 0;
 }
 
-
-.content-container.bio {
+.content-container.work {
   height: 45vh;
-}
-
-
-.bio {
-  margin-top: 5rem;
 }
 
 .btn-positive {
