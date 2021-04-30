@@ -1,0 +1,176 @@
+// RADIUS
+$border-radius-small: 14px;
+$border-radius-large: 20px;
+
+//// COLORS
+// main cta
+$blue1: #3740EA;
+// main nav cta
+$blue2: #0814E4;
+// card icon
+$blue3: #5F66ED;
+// contact section
+$blue4: #4C53D6;
+// a bit about me icons
+$blue5: #252885;
+//input title
+$blue6: #151849;
+// second nav cta
+$grey1: #F5F5F5;
+// second section cta
+$grey2: #F9FAFC;
+// tools icon
+$grey3: #4E4F56;
+// text
+$grey4: #8E8F9F;
+// heading
+$grey5: #10123E;
+// sub-header
+$grey6: #434564;
+
+// Breakpoints
+// Small smartphones (portrait view)
+$screen-xsmall-min: 320px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-small-min: 540px;
+
+// Small tablets (portrait view)
+$screen-medium-min: 768px;
+
+// Tablets and small desktops
+$screen-large-min: 992px;
+
+// Large tablets and desktops
+$screen-xlarge-min: 1400px;
+
+// Extra extra small devices
+@mixin xsmall-breakpoint {
+  @media (min-width: #{$screen-xsmall-min}) {
+      @content;
+  }
+}
+
+// Small devices
+@mixin small-breakpoint {
+  @media (min-width: #{$screen-small-min}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin medium-breakpoint {
+  @media (min-width: #{$screen-medium-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin large-breakpoint {
+  @media (min-width: #{$screen-large-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xlarge-breakpoint {
+  @media (min-width: #{$screen-xlarge-min}) {
+      @content;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: $grey5;
+
+  &:hover {
+    color: $blue5;
+  }
+}
+
+.navbar-nav {
+  .nav-link {
+    svg {
+      font-size: 20px;
+    }
+  }
+}
+
+.port-navigation-section {
+  .navbar-collapse.collapse.show {
+    padding-bottom: 100vh;
+  }
+
+  .btn {
+    border-radius: $border-radius-large;
+    padding: 0;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0 !important;
+    justify-content: center;
+
+    @include medium-breakpoint {
+      justify-content: space-between;
+    }
+
+    &:before {
+      content: none;
+    }
+
+    .btn-primary {
+      background-color: transparent;
+      color: rgba(0,0,0,.5);
+      font-weight: normal;
+      border: none;
+      padding: 0;
+
+      @include small-breakpoint {
+        background-color: $blue2;
+        padding: 9px 20px;
+        font-weight: bold;
+        color: white;
+
+        &:hover {
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: rgba(0,0,0,.5);
+      font-weight: normal;
+      border: none;
+      padding: 0;
+
+      @include small-breakpoint {
+        background-color: $grey1;
+        color: $grey5;
+        border: none;
+        border-radius: $border-radius-large;
+        padding: 9px 35px;
+        font-weight: bold;
+
+        &:hover {
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+  }
+
+  &.navbar-light .navbar-toggler {
+    color: white;
+    border: none !important;
+  }
+}
+
+.navbar-expand-sm .navbar-nav {
+  align-items: center;
+}
+
+.navbar-toggler-icon {
+  background-image: url('./bx_bx-menu-alt-left.png') !important;
+}

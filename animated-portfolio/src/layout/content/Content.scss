@@ -82,16 +82,23 @@ $screen-xlarge-min: 1400px;
 // =====================================================
 
 
-.bio-header-section {
+.project-header-section {
+  background-color: $grey2;
   text-align: center;
-  padding-top: 100px;
+  margin-top: 30px;
+
 }
 
-.bio-header-container {
-  padding-bottom: 40px;
+.project-header-container {
+  margin: 90px 0 70px;
+
+  p {
+    color: $grey4;
+  }
 }
 
-.bio-section {
+.project-section {
+  background-color: $grey2;
   padding: 20px 5vw;
 
   .col {
@@ -112,71 +119,32 @@ $screen-xlarge-min: 1400px;
   }
 }
 
-.nav-pills .nav-link.active {
+.project-card {
+  height: 360px;
+  border-radius: 20px;
   background: white;
-  color: $blue6;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  padding: 15px;
-  margin: 0;
+  border-radius: 14px;
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// card icon
+$blue3: #5F66ED;
+
+.card-content {
+  width: 80%;
+  height: auto;
   text-align: center;
 
-  @include large-breakpoint {
-    text-align: left;
-    padding: 30px;
-    margin: 40px 0;
+  svg {
+    font-size: 80px;
+    color: $blue3;
   }
-}
-
-.nav-item {
-  #first {
-    margin-top: 0;
-  }
-
-  a {
-    text-align: center;
-
-    @include large-breakpoint {
-      text-align: left;
-    }
-  }
-}
-
-.nav-pills {
-  font-size: 18px;
-
-  @include large-breakpoint {
-    font-size: 25px;
-  }
-
-  .nav-link {
-    margin: 15px 0;
-    color: $blue6;
-
-    svg {
-      margin-right: 15px;
-    }
-  }
-}
-
-.fade.tab-pane.active.show {
-  p {
-    text-align: center;
-    padding-top: 15px;
-
-    @include large-breakpoint {
-      text-align: left;
-      padding-top: none;
-    }
-  }
-}
-
-.bio-section .col {
-  background-color: $grey2;
-  padding: 25px;
-  border-radius: 12px;
-}
-
-.bio-content {
-  align-self: center;
 }

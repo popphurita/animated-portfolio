@@ -1,3 +1,7 @@
+// RADIUS
+$border-radius-small: 14px;
+$border-radius-large: 20px;
+
 //// COLORS
 // main cta
 $blue1: #3740EA;
@@ -24,9 +28,6 @@ $grey5: #10123E;
 // sub-header
 $grey6: #434564;
 
-
-
-
 // Breakpoints
 // Small smartphones (portrait view)
 $screen-xsmall-min: 320px;
@@ -43,13 +44,12 @@ $screen-large-min: 992px;
 // Large tablets and desktops
 $screen-xlarge-min: 1400px;
 
-// Extra small devices
+// Extra extra small devices
 @mixin xsmall-breakpoint {
   @media (min-width: #{$screen-xsmall-min}) {
       @content;
   }
 }
-
 
 // Small devices
 @mixin small-breakpoint {
@@ -79,104 +79,63 @@ $screen-xlarge-min: 1400px;
   }
 }
 
-// =====================================================
-
-
 .bio-header-section {
-  text-align: center;
-  padding-top: 100px;
+  margin-top: 30px;
+  height: 10vh;
+
+
+  p {
+    color: $grey4;
+  }
 }
 
-.bio-header-container {
-  padding-bottom: 40px;
-}
+// .bio-header-container {
+//   text-align: center;
 
-.bio-section {
-  padding: 20px 5vw;
+//   @include medium-breakpoint {
+//     text-align: left;
+//   }
+// }
 
-  .col {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
+.bio-cta-container {
+  height: 150px;
+  width: 80%;
+  margin: 0 auto;
 
   @include medium-breakpoint {
-    padding: 15px 10vw;
-  }
-
-  @include xlarge-breakpoint {
-    padding: 15px 20vw;
+    margion-top: 100px;
+    margin-left: 0;
   }
 }
 
-.nav-pills .nav-link.active {
-  background: white;
-  color: $blue6;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  padding: 15px;
-  margin: 0;
-  text-align: center;
+.content-container-body {
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+  padding-bottom: 3.5em;
+  padding-top: 1em;
+  height: 65vh;
 
-  @include large-breakpoint {
-    text-align: left;
-    padding: 30px;
-    margin: 40px 0;
+  &:first-child {
+    height: fit-content;
   }
 }
 
-.nav-item {
-  #first {
-    margin-top: 0;
-  }
 
-  a {
-    text-align: center;
-
-    @include large-breakpoint {
-      text-align: left;
-    }
-  }
+.content-container-bio {
+  padding: 3.5em;
+  padding-bottom: 0;
 }
 
-.nav-pills {
-  font-size: 18px;
 
-  @include large-breakpoint {
-    font-size: 25px;
-  }
-
-  .nav-link {
-    margin: 15px 0;
-    color: $blue6;
-
-    svg {
-      margin-right: 15px;
-    }
-  }
+.content-container.bio {
+  height: 45vh;
 }
 
-.fade.tab-pane.active.show {
-  p {
-    text-align: center;
-    padding-top: 15px;
 
-    @include large-breakpoint {
-      text-align: left;
-      padding-top: none;
-    }
-  }
+.bio {
+  margin-top: 5rem;
 }
 
-.bio-section .col {
-  background-color: $grey2;
-  padding: 25px;
-  border-radius: 12px;
-}
-
-.bio-content {
-  align-self: center;
+.btn-positive {
+  background-color: $blue1;
 }

@@ -1,6 +1,70 @@
+// Breakpoints
+// Small smartphones (portrait view)
+$screen-xsmall-min: 320px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-small-min: 540px;
+
+// Small tablets (portrait view)
+$screen-medium-min: 768px;
+
+// Tablets and small desktops
+$screen-large-min: 992px;
+
+// Large tablets and desktops
+$screen-xlarge-min: 1400px;
+
+// Extra small devices
+@mixin xsmall-breakpoint {
+  @media (min-width: #{$screen-xsmall-min}) {
+      @content;
+  }
+}
+
+
+// Small devices
+@mixin small-breakpoint {
+  @media (min-width: #{$screen-small-min}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin medium-breakpoint {
+  @media (min-width: #{$screen-medium-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin large-breakpoint {
+  @media (min-width: #{$screen-large-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xlarge-breakpoint {
+  @media (min-width: #{$screen-xlarge-min}) {
+      @content;
+  }
+}
+
 .row {
- margin-left: 0 !important;
- margin-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.main-content {
+  &.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+.col {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 .navbar-collapse {
