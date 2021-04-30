@@ -87,6 +87,10 @@ $screen-xlarge-min: 1400px;
 .hero-header-section {
   margin-top: 30px;
 
+  @include medium-breakpoint {
+    margin-top: 50px;
+  }
+
   p {
     color: $grey4;
   }
