@@ -61,8 +61,7 @@ export const Bio: React.FC = () => {
                     <p>I enjoy making a user-friendly website and application. I always make sure the design is functional, useful, responsive and stand out.</p>
                   </Tab.Pane>
                   <Tab.Pane eventKey="second">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
+                    <p>I enjoy running and analysing data from usability testing. It helps me understand my user experience better. Most of the time, it just reveals issues that may not have been obvious to us.</p>
                   </Tab.Pane>
                   <Tab.Pane eventKey="third">
                     <p>Digital accessibility is a legal obligation for the higher education sector, a significant part of my job is to make sure what we design is usable by the widest possible audience.</p>
