@@ -5,6 +5,7 @@ import { Content } from '../layout/content/Content';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Helmet } from 'react-helmet';
 
 import './index.scss';
 import PortNavigation from '../layout/portNavigation/PortNavigation';
@@ -12,6 +13,9 @@ import PortNavigation from '../layout/portNavigation/PortNavigation';
 const Index: React.FunctionComponent<{}> = () => {
   return (
     <>
+      <Helmet>
+        <title>Pop Phurita</title>
+      </Helmet>
       <Row>
         <Col>
           <PortNavigation />
