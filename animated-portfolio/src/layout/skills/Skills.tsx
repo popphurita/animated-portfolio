@@ -22,30 +22,45 @@ export const Skills: React.FC = () => {
           </div>
         </Col>
       </Row>
-      <Row className="skills-section" xs={3} md={5}>
+      <Row className="skills-section" xs={2} md={4}>
+        {/* <Col>
+          <div className="skills-container">
+            <div className="skills-icons">
+              <Icon icon={outlineAccountTree} />
+            </div>
+            <p>Wireframe</p>
+          </div>
+        </Col> */}
         <Col>
-          <div className="skills-icons">
-            <Icon icon={outlineAccountTree} />
+          <div className="skills-container">
+            <div className="skills-icons">
+              <Icon icon={roundDevicesOther} />
+            </div>
+              <p>User Interface Design</p>
           </div>
         </Col>
         <Col>
-          <div className="skills-icons">
-            <Icon icon={roundDevicesOther} />
+          <div className="skills-container">
+            <div className="skills-icons">
+              <Icon icon={outlineAssignmentInd} />
+            </div>
+            <p>User Research</p>
           </div>
         </Col>
         <Col>
-          <div className="skills-icons">
-            <Icon icon={outlineAssignmentInd} />
+          <div className="skills-container">
+            <div className="skills-icons">
+              <Icon icon={baselineAnimation} />
+            </div>
+            <p>Interaction Design</p>
           </div>
         </Col>
         <Col>
-          <div className="skills-icons">
-            <Icon icon={baselineAnimation} />
-          </div>
-        </Col>
-        <Col>
-          <div className="skills-icons">
-            <Icon icon={baselineDeveloperMode} />
+          <div className="skills-container">
+            <div className="skills-icons">
+              <Icon icon={baselineDeveloperMode} />
+            </div>
+            <p>Front-end development</p>
           </div>
         </Col>
       </Row>
