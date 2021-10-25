@@ -27,7 +27,7 @@ export const Content: React.FC = () => {
     <>
       <Row className="project-header-section">
         <Col>
-          <div className="project-header-container">
+          <div className="project-header-container animation fadeInBottom">
             <h2>Design and implement website and application</h2>
             <p>Delivering a wide range of projects from a single page marketing site to a e-commerce online shop.</p>
           </div>
@@ -36,7 +36,7 @@ export const Content: React.FC = () => {
       <Row className="project-section" xs={1} lg={3}>
         <Col >
           <a href="/cryptovation">
-            <div className="project-card">
+            <div className="project-card animation fadeInBottom">
               <div className="card-content">
                 <div className="project-card-header">
                   <h3>Cryptovation</h3>
@@ -51,7 +51,7 @@ export const Content: React.FC = () => {
         </Col>
         <Col>
           <a href="/nutririce">
-            <div className="project-card">
+            <div className="project-card animation fadeInBottom">
               <div className="card-content">
                 <div className="project-card-header">
                   <h3>Nutri Rice</h3>
@@ -64,7 +64,7 @@ export const Content: React.FC = () => {
         </Col>
         <Col>
           <a href="/typecase">
-            <div className="project-card">
+            <div className="project-card animation fadeInBottom">
               <div className="card-content">
                 <div className="project-card-header">
                   <h3>Typecase CMS</h3>
@@ -80,7 +80,7 @@ export const Content: React.FC = () => {
       <Row className="project-section" xs={1} md={3}>
         <Col>
           <a href="/letherdash">
-            <div className="project-card">
+            <div className="project-card animation fadeInBottom">
               <div className="card-content">
                 <div className="project-card-header">
                   <h3>Letherdash</h3>
@@ -94,7 +94,7 @@ export const Content: React.FC = () => {
         </Col>
         <Col>
           <a href="/nueroai">
-            <div className="project-card">
+            <div className="project-card animation fadeInBottom">
               <div className="card-content">
                 <div className="project-card-header">
                   <h3>Nuero AI</h3>
@@ -109,7 +109,7 @@ export const Content: React.FC = () => {
         </Col>
         <Col>
           <a href="/designsystem">
-            <div className="project-card">
+            <div className="project-card animation fadeInBottom">
               <div className="card-content">
                 <div className="project-card-header">
                   <h3>Design System</h3>
@@ -126,7 +126,7 @@ export const Content: React.FC = () => {
       {/* <Row xs={1} md={2}>
         <Col>
           <a href="/nueroai">
-            <div className="project-card">
+            <div className="project-card animation fadeInBottom">
               <h3>Nuero AI</h3>
             </div>
           </a>
@@ -134,7 +134,7 @@ export const Content: React.FC = () => {
         <Col>
           <a href="/responsivedesign">
             <div>
-              <div className="project-card">
+              <div className="project-card animation fadeInBottom">
                 <h3>Responsive Design</h3>
               </div>
             </div>
@@ -145,7 +145,7 @@ export const Content: React.FC = () => {
         <Col>
           <a href="/typeset">
             <div>
-              <div className="project-card">
+              <div className="project-card animation fadeInBottom">
                 <h3>Rota management</h3>
               </div>
             </div>
@@ -154,7 +154,7 @@ export const Content: React.FC = () => {
         <Col>
           <a href="/otherprojects">
             <div>
-              <div className="project-card">
+              <div className="project-card animation fadeInBottom">
                 <h3>Other Projects</h3>
               </div>
             </div>
@@ -162,7 +162,7 @@ export const Content: React.FC = () => {
         </Col>
       </Row> */}
       {/* <a href="/prototype">
-            <div className="project-card">
+            <div className="project-card animation fadeInBottom">
               <div className="card-content">
                 <h3>Figma Principle interaction design</h3>
                 <Icon icon={cashStack} />
@@ -170,7 +170,7 @@ export const Content: React.FC = () => {
             </div>
           </a> */}
       {/* <a href="/letherdash">
-            <div className="project-card">
+            <div className="project-card animation fadeInBottom">
               <div className="card-content">
                 <h3>LetherDash</h3>
                 <Icon icon={cpuIcon} />

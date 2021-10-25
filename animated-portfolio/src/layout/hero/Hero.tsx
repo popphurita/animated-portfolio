@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
   return (
     <>
       <Container>
-        <Row className="hero-header-section" xs={1} md={2}>
+        <Row className="hero-header-section animation fadeInBottom" xs={1} md={2}>
           <Col>
             <div className="hero-header-container">
               <h1>Phurita Letheren</h1>
