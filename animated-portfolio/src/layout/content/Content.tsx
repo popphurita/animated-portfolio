@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Badge from 'react-bootstrap/Badge';
 
 import AOS from 'aos';
 
@@ -37,9 +38,12 @@ export const Content: React.FC = () => {
           <a href="/cryptovation">
             <div className="project-card">
               <div className="card-content">
-                <h3>Cryptovation</h3>
+                <div className="project-card-header">
+                  <h3>Cryptovation</h3>
+                  <Badge>UX & UI</Badge>
+                  <Badge>Start-up</Badge>
+                </div>
                 <Icon icon={cashStack} />
-
               </div>
             </div>
           </a>
@@ -49,9 +53,11 @@ export const Content: React.FC = () => {
           <a href="/nutririce">
             <div className="project-card">
               <div className="card-content">
-                <h3>Nutri Rice</h3>
+                <div className="project-card-header">
+                  <h3>Nutri Rice</h3>
+                  <Badge>User research</Badge>
+                </div>
                 <Icon icon={shopIcon} />
-
               </div>
             </div>
           </a>
@@ -60,7 +66,11 @@ export const Content: React.FC = () => {
           <a href="/typecase">
             <div className="project-card">
               <div className="card-content">
-                <h3>Typecase CMS</h3>
+                <div className="project-card-header">
+                  <h3>Typecase CMS</h3>
+                  <Badge>Usability testing</Badge>
+                  <Badge>Collab w/ devs</Badge>
+                </div>
                 <Icon icon={cardHeading} />
               </div>
             </div>
@@ -72,7 +82,11 @@ export const Content: React.FC = () => {
           <a href="/letherdash">
             <div className="project-card">
               <div className="card-content">
-                <h3>House jobs management</h3>
+                <div className="project-card-header">
+                  <h3>Letherdash</h3>
+                  <Badge>Pet project</Badge>
+                  <Badge>Dashboard</Badge>
+                </div>
                 <Icon icon={calendar4Range} />
               </div>
             </div>
@@ -82,7 +96,11 @@ export const Content: React.FC = () => {
           <a href="/nueroai">
             <div className="project-card">
               <div className="card-content">
-                <h3>Nuero AI</h3>
+                <div className="project-card-header">
+                  <h3>Nuero AI</h3>
+                  <Badge>Start-up</Badge>
+                  <Badge>Marketing website</Badge>
+                </div>
                 <Icon icon={cpuIcon} />
               </div>
             </div>
@@ -93,7 +111,11 @@ export const Content: React.FC = () => {
           <a href="/designsystem">
             <div className="project-card">
               <div className="card-content">
-                <h3>Design System</h3>
+                <div className="project-card-header">
+                  <h3>Design System</h3>
+                  <Badge>SCSS</Badge>
+                  <Badge>IA</Badge>
+                </div>
                 <Icon icon={paletteIcon} />
               </div>
             </div>
