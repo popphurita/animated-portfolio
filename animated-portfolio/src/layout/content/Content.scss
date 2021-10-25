@@ -11,6 +11,10 @@ $blue4: #4C53D6;
 $blue5: #252885;
 //input title
 $blue6: #151849;
+//lightest blue
+$bluegrey1: #e9e9fa;
+
+$bluegrey2: #64678f;
 // second nav cta
 $grey1: #F5F5F5;
 // second section cta
@@ -148,3 +152,20 @@ $blue3: #5F66ED;
     color: $blue3;
   }
 }
+
+// Card header 
+.project-card-header {
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  .badge {
+    background: $bluegrey1;
+    color: $bluegrey2;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+  }
+}
+  
