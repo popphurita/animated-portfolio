@@ -189,3 +189,18 @@ $screen-xlarge-min: 1400px;
 .btn-positive {
   background-color: $blue1;
 }
+
+// Animation
+.animation {
+  animation-duration: 1.15s;
+  animation-fill-mode: both;
+} 
+
+.fadeInBottom { animation-name: fadeInBottom }
+  @keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+  }
